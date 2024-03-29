@@ -6,7 +6,7 @@ const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => {
   const isProduction = process.env.NODE_ENV === 'production' || argv.mode === 'production';
   const publicPath = isProduction
-    ? 'https://studentapp3.netlify.app/' 
+    ? 'https://studentapp3-lab4.netlify.app/' 
     : 'http://localhost:3002/';
 
   return {
